@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ai-ml-cv-site
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
+    name: intelligirls-ai-career-compass
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
